@@ -12,22 +12,22 @@ const Footer = () => {
                     <section className="mb-4">
                         <Row>
                             <Col>
-                                <a className="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/andrey.barriosvalverde" role="button">
+                                <a className="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button">
                                     <FaFacebookF />
                                 </a>
-                                <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                                <a className="btn btn-outline-light btn-floating m-1" href="https://twitter.com/?lang=es" role="button">
                                     <FaTwitter />
                                 </a>
                                 <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button">
                                     <FaGoogle />
                                 </a>
-                                <a className="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/andreybv_5/" role="button">
+                                <a className="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button">
                                     <FaInstagram />
                                 </a>
-                                <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                                <a className="btn btn-outline-light btn-floating m-1" href="https://cr.linkedin.com/" role="button">
                                     <FaLinkedinIn />
                                 </a>
-                                <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                                <a className="btn btn-outline-light btn-floating m-1" href="https://github.com/" role="button">
                                     <FaGithub />
                                 </a>
                             </Col>
