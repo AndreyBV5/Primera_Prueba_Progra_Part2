@@ -4,9 +4,10 @@ import React from 'react'
 import Hero from './components/Hero'
 import About from './components/About'
 import Projects from './components/Projects'
-import Footer from './components/Footer'
 import NavbarHeader from './components/Navbar';
 import Header from './components/Header';
+import CalltoAction from './components/CalltoAction';
+import Footer from './components/Footer';
 
 
 const page = () => {
@@ -17,6 +18,7 @@ const page = () => {
       <Hero/>
       <About/>
       <Projects/>
+      <CalltoAction/>
       <Footer/>
     </div>
   )
