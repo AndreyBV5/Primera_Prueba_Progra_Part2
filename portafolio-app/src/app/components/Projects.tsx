@@ -19,7 +19,7 @@ function Projects() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://images.ctfassets.net/hrltx12pl8hq/4ACnMj4WVSOZRZt0jHu9h5/1506f652bcd70f4dc3e88219fefea858/shutterstock_739595833-min.jpg?fit=fill&w=800&h=300" width={400} height={250}
+          src="https://img.freepik.com/vector-premium/banner-diseno-colorido-azul-oscuro-digital-tecnologia-red_181182-33509.jpg" height={270}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -30,7 +30,7 @@ function Projects() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://images.ctfassets.net/hrltx12pl8hq/4ACnMj4WVSOZRZt0jHu9h5/1506f652bcd70f4dc3e88219fefea858/shutterstock_739595833-min.jpg?fit=fill&w=800&h=300" width={400} height={250}
+          src="https://png.pngtree.com/thumb_back/fw800/background/20220523/pngtree-technology-circuit-lines-shiny-banner-image_1391389.jpg" height={270}
           alt="Second slide"
         />
 
@@ -42,7 +42,7 @@ function Projects() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://images.ctfassets.net/hrltx12pl8hq/4ACnMj4WVSOZRZt0jHu9h5/1506f652bcd70f4dc3e88219fefea858/shutterstock_739595833-min.jpg?fit=fill&w=800&h=300" width={400} height={250}
+          src="https://images.ctfassets.net/hrltx12pl8hq/4ACnMj4WVSOZRZt0jHu9h5/1506f652bcd70f4dc3e88219fefea858/shutterstock_739595833-min.jpg?fit=fill&w=800&h=300" height={270}
           alt="Third slide"
         />
 
