@@ -63,3 +63,29 @@
     text-align: center;
 }
 
+
+.box{
+    margin-top: 150px;
+    background-color: black;
+    padding: 100px;
+
+}
+
+.box h2{
+
+    color: white;
+    font-size: 35px;
+}
+
+.box p{
+
+    font-size: 20px;
+    color: white;
+}
+
+
+ .box Button{
+
+    position: relative;
+    text-align: right;
+} 

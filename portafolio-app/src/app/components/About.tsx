@@ -7,6 +7,7 @@ import { Button } from "react-bootstrap"
 const About = () => {
   return (
     <div className="containers">
+      <div className="box2">
       <figure className="Image">
         <Image src={Profile} alt="" width={500} height={300} />
       </figure>
@@ -16,7 +17,8 @@ const About = () => {
         <br />I have done some projects
         <br />most college jobs</p>
       <div className="Button">
-        <Button variant="dark" size="lg">Free consultion</Button>
+        <Button variant="dark" size="lg">Free consultion Github</Button>
+        </div>
       </div>
     </div>
   )
