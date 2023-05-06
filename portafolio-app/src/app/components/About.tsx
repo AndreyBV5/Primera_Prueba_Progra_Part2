@@ -6,6 +6,7 @@ import { Button } from "react-bootstrap"
 
 const About = () => {
   return (
+    <section id = "About">
     <div className="containers">
       <div className="box2">
       <figure className="Image">
@@ -21,6 +22,7 @@ const About = () => {
         </div>
       </div>
     </div>
+    </section>
   )
 }
 
