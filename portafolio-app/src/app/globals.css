@@ -11,6 +11,15 @@
     font-size: 60px;
 }
 
+.HeaderImage{
+
+  float: left;
+  margin-left: 15px;
+  position: relative;
+  left: 270px;
+  bottom: -13px;
+}
+
 
 .containers h2{
     margin-top: 350px;
