@@ -46,7 +46,7 @@ function Projects() {
       <div className="ProjectsH2">
         <section id="Projects">
           <h2>My Projects</h2>
-          <Carousel activeIndex={index} onSelect={handleSelect} prevIcon={<Button variant="dark" onClick={handlePrevClick}>Back</Button>} nextIcon={<Button variant="dark" onClick={handleNextClick}>Next</Button>}>
+          <Carousel activeIndex={index} onSelect={handleSelect} prevIcon={<Button variant="outline-light" onClick={handlePrevClick}>Back</Button>} nextIcon={<Button variant="outline-light" onClick={handleNextClick}>Next</Button>}>
             {repos.map((repo) => (
               <Carousel.Item key={repo.id}>
                 {repo.name}
