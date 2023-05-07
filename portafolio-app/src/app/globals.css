@@ -89,4 +89,29 @@
 
     position: relative;
     text-align: right;
-} 
+}
+
+.project-info {
+    background-color: rgba(238, 81, 81, 0.8);
+    padding: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+
+/* .carousel-indicators {
+
+    margin-bottom: 200px;
+    padding: 10%;
+    background-color: brown;
+
+} */
+
+
+/* .ProjectsH2 {
+
+    background-color: blueviolet;
+
+} */

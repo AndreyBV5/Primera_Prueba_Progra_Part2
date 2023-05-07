@@ -1,63 +1,67 @@
-"use client"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useState } from 'react';
-import { Carousel } from "react-bootstrap"
-import Image from "next/image";
-import Logo from '../components/Logo Andrey.png'
+import { useState, useEffect } from 'react';
+import { Carousel, Button } from "react-bootstrap"
+
+interface Repo {
+  id: number;
+  name: string;
+  description: string;
+}
 
 function Projects() {
-
   const [index, setIndex] = useState(0);
+  const [repos, setRepos] = useState<Repo[]>([]);
+
   const handleSelect = (selectedIndex: any) => {
     setIndex(selectedIndex);
-
   };
+
+  const handlePrevClick = () => {
+    if (index === 0) {
+      setIndex(repos.length - 1);
+    } else {
+      setIndex(index - 1);
+    }
+  };
+
+  const handleNextClick = () => {
+    if (index === repos.length - 1) {
+      setIndex(0);
+    } else {
+      setIndex(index + 1);
+    }
+  };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch('https://api.github.com/users/AndreyBV5/repos');
+      const data = await response.json();
+      setRepos(data);
+    };
+    fetchData();
+  }, []);
+
   return (
-    <div className="ProjectsH2">
-      <section id ="Projects">
-      <h2>My Projects</h2>
-      <Carousel activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://img.freepik.com/vector-premium/banner-diseno-colorido-azul-oscuro-digital-tecnologia-red_181182-33509.jpg" height={350}
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://png.pngtree.com/thumb_back/fw800/background/20220523/pngtree-technology-circuit-lines-shiny-banner-image_1391389.jpg" height={350}
-          alt="Second slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://images.ctfassets.net/hrltx12pl8hq/4ACnMj4WVSOZRZt0jHu9h5/1506f652bcd70f4dc3e88219fefea858/shutterstock_739595833-min.jpg?fit=fill&w=800&h=300" height={350}
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-    </section>
+    <div className='Projectbox'>
+      <div className="ProjectsH2">
+        <section id="Projects">
+          <h2>My Projects</h2>
+          <Carousel activeIndex={index} onSelect={handleSelect} prevIcon={<Button variant="dark" onClick={handlePrevClick}>Back</Button>} nextIcon={<Button variant="dark" onClick={handleNextClick}>Next</Button>}>
+            {repos.map((repo) => (
+              <Carousel.Item key={repo.id}>
+                {repo.name}
+                <Carousel.Caption>
+                  <div className="project-info">
+                    <h3>{repo.name}</h3>
+                    <p>{repo.description}</p>
+                  </div>
+                </Carousel.Caption>
+              </Carousel.Item>
+            ))}
+          </Carousel>
+        </section>
+      </div>
     </div>
-
   );
 }
 
