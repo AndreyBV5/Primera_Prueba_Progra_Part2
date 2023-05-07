@@ -1,7 +1,6 @@
 "use client"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react'
-import Hero from './components/Hero'
 import About from './components/About'
 import Projects from './components/Projects'
 import NavbarHeader from './components/Navbar';
@@ -15,7 +14,6 @@ const page = () => {
     <div>
       <NavbarHeader/>
       <Header/>
-      <Hero/>
       <About/>
       <Projects/>
       <CalltoAction/>
