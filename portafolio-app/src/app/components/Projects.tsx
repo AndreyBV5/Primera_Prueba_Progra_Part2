@@ -50,6 +50,7 @@ function Projects() {
             {repos.map((repo) => (
               <Carousel.Item key={repo.id}>
                 {repo.name}
+                {/* {repo.description} */}
                 <Carousel.Caption>
                   <div className="project-info">
                     <h3>{repo.name}</h3>
